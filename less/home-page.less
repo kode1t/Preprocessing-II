@@ -6,19 +6,63 @@
     justify-content: space-between;
   }
 
+  // .fun-bus {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: flex-start;
+  //   align-items: center;
+  // }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline
+    }
+
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+
   .fun-bus {
     border-top: 1px dashed gray;
     width: 100%
   }
-  
 
   .content-section {
-    margin: 30px 0;
+    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-   
+  }
     
     .text-content {
       width: 48%;
@@ -38,6 +82,14 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media (max-width: 500px) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -50,7 +102,7 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 60%;
     margin: 0 auto 30px;
 
     img {
@@ -58,11 +110,23 @@
     }
   }
 
+  .btn {
+    color: white;
+  }
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
